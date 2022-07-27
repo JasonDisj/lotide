@@ -1,10 +1,11 @@
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
-    console.log("Passed");
+    console.log(`Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log("Failed");
+    console.log(`Assertion Failed: ${actual} !== ${expected}`);
   }
 };
+
 const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
