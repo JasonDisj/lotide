@@ -3,7 +3,7 @@ const tail = function(arr) {
   if (arr.length === 0) {
     console.log("Array is empty");
   } else if (arr.length === 1) {
-    console.log("Tail equals to head");
+    return result.push(arr[0]);
   } else if (arr.length > 1) {
     for (let i = 1; i < arr.length; i++) {
       result.push(arr[i]);
